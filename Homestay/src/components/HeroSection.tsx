@@ -2,6 +2,8 @@ import { heroBadges } from "../static/constant";
 import { ButtonLink } from "./shared";
 import backgroundImg from '../assets/images/backgroundImage.jpg';
 
+const whatsappUrl = 'https://wa.me/918762702417'
+
 export function HeroSection() {
   return (
     <section className="relative isolate flex h-[100svh] items-center overflow-hidden px-4 pb-16 pt-28 sm:px-6 lg:px-8">
@@ -37,7 +39,13 @@ export function HeroSection() {
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-          <ButtonLink href="#contact" variant="primary" className="px-7 py-4 shadow-[0_12px_30px_rgba(18,63,29,0.3)]">
+          <ButtonLink
+            href={whatsappUrl}
+            target="_blank"
+            rel="noreferrer"
+            variant="primary"
+            className="px-7 py-4 shadow-[0_12px_30px_rgba(18,63,29,0.3)]"
+          >
             Book Your Stay
           </ButtonLink>
           <ButtonLink href="#activities" variant="secondary" className="px-7 py-4">

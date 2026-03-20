@@ -1,6 +1,7 @@
 import { meals } from "../static/constant";
 import { SectionHeading } from "./shared";
 import localFoodImg from '../assets/images/localFood.png';
+
 export function FoodSection() {
   return (
     <section className="px-4 py-20 sm:px-6 lg:px-8">
@@ -28,9 +29,9 @@ export function FoodSection() {
             alt="Traditional local meal plated elegantly"
             className="aspect-square w-full rounded-[2rem] object-cover shadow-[0_24px_55px_rgba(28,54,24,0.18)]"
           />
-          <div className="absolute bottom-5 left-5 max-w-xs rounded-[1.5rem] border border-white/50 bg-[#fffaf0]/88 p-5 shadow-xl backdrop-blur-md">
-            <div className="mb-3 text-lg text-[#123f1d]">✦</div>
-            <p className="font-display text-xl font-bold italic tracking-[-0.03em] text-[#18210d]">
+          <div className="absolute top-3 lg:border-3  left-3 max-w-[78%] h-fit rounded-[1.25rem] border border-white/50 bg-[#fffaf0]/84 p-4 shadow-xl backdrop-blur-md sm:bottom-5 sm:left-5 sm:max-w-xs sm:rounded-[1.5rem] sm:p-5">
+            <div className="mb-2 hidden text-base text-[#123f1d] sm:mb-3 sm:block sm:text-lg">*</div>
+            <p className="font-display text-lg font-bold italic tracking-[-0.03em] text-[#18210d] sm:text-xl">
               "The best homemade food I have had in years. Truly authentic."
             </p>
           </div>

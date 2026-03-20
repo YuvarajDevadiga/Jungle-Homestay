@@ -1,6 +1,8 @@
 import { navLinks } from "../static/constant";
 import { ButtonLink } from "./shared";
 
+const whatsappUrl = 'https://wa.me/918762702417'
+
 export function Navbar() {
   return (
     <div className="fixed inset-x-0 top-0 z-50 px-4 pt-3">
@@ -15,7 +17,7 @@ export function Navbar() {
             </a>
           ))}
         </div>
-        <ButtonLink href="#contact" variant="primary" className="px-4 py-2 text-xs md:px-5">
+        <ButtonLink href={whatsappUrl} target="_blank" rel="noreferrer" variant="primary" className="px-4 py-2 text-xs md:px-5">
           Book Now
         </ButtonLink>
       </nav>

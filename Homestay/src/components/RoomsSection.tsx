@@ -1,5 +1,7 @@
 import { rooms } from "../static/constant";
-import { SectionHeading } from "./shared";
+import { ButtonLink, SectionHeading } from "./shared";
+
+const whatsappUrl = 'https://wa.me/918762702417'
 
 export function RoomsSection() {
   return (
@@ -34,9 +36,15 @@ export function RoomsSection() {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full rounded-full bg-[#e8e4c9] px-5 py-3 text-sm font-bold text-[#26331b] transition hover:bg-[#123f1d] hover:text-white">
-                  Check Availability
-                </button>
+                <ButtonLink
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  variant="light"
+                  className="block w-full bg-[#e8e4c9] px-5 py-3 text-center text-sm font-bold text-[#26331b] transition hover:bg-[#123f1d] hover:text-white"
+                >
+                  Reserve Your Stay
+                </ButtonLink>
               </div>
             </article>
           ))}
