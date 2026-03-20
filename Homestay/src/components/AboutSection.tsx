@@ -1,13 +1,13 @@
 import { SectionHeading, Stat } from "./shared";
-
+import homeImg from '../assets/images/plantation.jpeg'
 export function AboutSection() {
   return (
-    <section id="about" className="px-4 py-20 sm:px-6 lg:px-8">
+    <section id="about" className="relative z-10 bg-[#f7f3d8] px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="relative">
           <div className="absolute -inset-4 rounded-[2rem] bg-[#b8d56e]/30 blur-3xl" />
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhBtpS7XOeygtCXbrie_QTsQ0yT_K9ulyObIJkM6MsTqd6plWqCj4jMGel3G3QJb-KYvYuJ3wAKR8A-TIe5U9vMzaeouSZh_REtUPuzBfDrrsw9pP8n5NUs0eZ2Vn7BgJw2ITxxSX2hs2-qt5NuoL4B_m6hqQ2TO_wfIjOl-42eV1Rv3cTezePnJy2VGHPNJ0GOyks_VblWe37MJE6atBZDWppYCpGAjjVVp_lE9s8R9LZCfyVnQb27QJN__NwF0VfowVr85F1ew"
+            src={homeImg}
             alt="Wooden eco cottage in the forest"
             className="relative aspect-[4/5] w-full rounded-[2rem] object-cover shadow-[0_24px_55px_rgba(28,54,24,0.18)]"
           />

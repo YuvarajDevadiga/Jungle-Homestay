@@ -26,7 +26,7 @@ export function LocationSection() {
             <ButtonLink href="tel:+918762702417" variant="primary">
               Call Now
             </ButtonLink>
-            <ButtonLink href={mapUrl} variant="light">
+            <ButtonLink href={mapUrl} variant="light" target="_blank" rel="noreferrer">
               Get Directions
             </ButtonLink>
           </div>

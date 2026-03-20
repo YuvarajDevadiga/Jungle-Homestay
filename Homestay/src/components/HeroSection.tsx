@@ -1,23 +1,24 @@
 import { heroBadges } from "../static/constant";
 import { ButtonLink } from "./shared";
+import backgroundImg from '../assets/images/backgroundImage.jpg';
 
 export function HeroSection() {
   return (
-    <section className="relative isolate flex min-h-screen items-center overflow-hidden px-4 pb-16 pt-28 sm:px-6 lg:px-8">
+    <section className="relative isolate flex h-[100svh] items-center overflow-hidden px-4 pb-16 pt-28 sm:px-6 lg:px-8">
       <img
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9NPO_MCvlsAPAwsnmqphfZE2sfFJUtGLlF1WtxQ7TpvxblCkHVJVOymFUq_X6RthJKEpLuZ76LcrNvl4wSrOkf8A4sLNOBzO8d0m4ArfCaChhn3VbSbYOoVVNiiMpA6D7PlIhjHZle7sAJLMtCKnzgdaqv1NRYjFm62DkPs-dEKiNQIeMakyKgM2tupA3HKN37bpLiVjvnbbak-O-NUDrrO4D3NwBgAZxKeU7-QM8eexFQvfT1HCd-j_DYqRJvUC0Uxf0KjCPmA"
+        src={backgroundImg}
         alt="Aerial river view through dense green forest"
         className="absolute inset-0 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,34,18,0.18)_0%,rgba(8,34,18,0.12)_38%,rgba(247,243,216,0.92)_88%,#f7f3d8_100%)]" />
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-[radial-gradient(circle_at_center,rgba(247,243,216,0.15),#f7f3d8_72%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,34,18,0.24)_0%,rgba(8,34,18,0.12)_38%,rgba(8,34,18,0.08)_72%,rgba(8,34,18,0.18)_100%)]" />
 
       <div className="relative mx-auto flex max-w-5xl flex-col items-center text-center">
         <div className="mb-8 flex flex-wrap justify-center gap-3">
           {heroBadges.map((badge) => (
             <div
               key={badge.label}
-              className="flex items-center gap-2 rounded-full border border-white/20 bg-[#f1f5d5]/90 px-4 py-2 text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#17351a] shadow-sm"
+               style={{ backgroundColor: badge.color }}
+              className={`flex items-center gap-2 rounded-full border border-white/20  px-4 py-2 text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#17351a] shadow-sm`}
             >
               <span>{badge.label}</span>
             </div>

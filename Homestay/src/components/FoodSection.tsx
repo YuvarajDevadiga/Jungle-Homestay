@@ -1,6 +1,6 @@
 import { meals } from "../static/constant";
 import { SectionHeading } from "./shared";
-
+import localFoodImg from '../assets/images/localFood.png';
 export function FoodSection() {
   return (
     <section className="px-4 py-20 sm:px-6 lg:px-8">
@@ -24,7 +24,7 @@ export function FoodSection() {
 
         <div className="relative">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjBWt0EtU9aQSV9LUcwlZN0-NWmeKGxgcNO69_-LAkiA2DvcyN5RrHk1oRk1CFM5CrjWtMe_3hZuvqnrtQwRfHUFxoZO3RGxYkindonDJ4EN0_rE39pNqiR9KhfUrVf7sp65Hd0PGAm5B0yKW0SrIM3XZiEy-q2IqblJUA-rQDqEnZWiInHLJYVWpDAfXD1Za0NUckr2VgQXF0ji6GudAR_ls4DaIab18wlmCJUlNwHTxQcqCdzgluKuLOyYIB0n6p_gvYJi0YLw"
+            src={localFoodImg}
             alt="Traditional local meal plated elegantly"
             className="aspect-square w-full rounded-[2rem] object-cover shadow-[0_24px_55px_rgba(28,54,24,0.18)]"
           />
