@@ -2,7 +2,7 @@ import { ButtonLink } from "./shared";
 
 export function CtaSection() {
   return (
-    <section className="px-4 pb-24 sm:px-6 lg:px-8">
+    <section id="cta-section" className="px-4 pb-24 sm:px-6 lg:px-8">
       <div className="mx-auto overflow-hidden rounded-[2.25rem] bg-[#0f5b92] px-6 py-14 text-center text-white shadow-[0_22px_50px_rgba(15,91,146,0.22)] sm:px-10">
         <span className="inline-flex rounded-full bg-[#ff6f61] px-4 py-1 text-[11px] font-extrabold uppercase tracking-[0.22em]">
           Limited availability

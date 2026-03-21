@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import type { MouseEvent, ReactNode } from 'react'
 
 type SectionHeadingProps = {
   eyebrow?: string
@@ -15,6 +15,7 @@ type ButtonLinkProps = {
   className?: string
   target?: string
   rel?: string
+  onClick?: (event: MouseEvent<HTMLAnchorElement>) => void
 }
 
 export function SectionHeading({
@@ -52,6 +53,7 @@ export function ButtonLink({
   className = '',
   target,
   rel,
+  onClick,
 }: ButtonLinkProps) {
   const variants = {
     primary: 'bg-[#123f1d] text-white hover:bg-[#0e3317]',
@@ -64,6 +66,7 @@ export function ButtonLink({
       href={href}
       target={target}
       rel={rel}
+      onClick={onClick}
       className={`rounded-full px-5 py-3 text-sm font-bold transition ${variants[variant]} ${className}`}
     >
       {children}
